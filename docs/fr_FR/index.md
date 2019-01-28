@@ -7,3 +7,7 @@ Modules compatible:
 - interrupteur On/Off (état / on / off)
 - Capteurs de températures (état)
 - Volet roulant  (état / Open / close / stop / slider)
+
+Configuration
+===
+
