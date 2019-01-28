@@ -44,7 +44,7 @@ Pour Rafraîchir des modules et leurs passer l'information de changement d'état
     %% globals
     --]]
 
-    local deviceID = {2004,2005,2062,2058,2094,2114}; -- ID de commande Rafraichir de chaque module Jeedom
+    local deviceID = {2004,2005,2062,2058,2094,2114}; -- ID de la commande Rafraichir de chaque module Jeedom
     apiKeyJeedom = fibaro:getGlobal("ApiJeedom"); -- API de votre Jeedom enregistré dans une variable globale
     for i=1, #deviceID do
 
