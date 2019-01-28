@@ -30,6 +30,8 @@ Retour d'information Fibaro->Jeedom
 
 Pour Rafraîchir des modules et leurs passer l'information de changement d'état il faut creer une scene dans votre HC2
 
+**_Code LUA_**
+
     --[[
     %% properties
     221 value ---- Id des modules Fibaro
