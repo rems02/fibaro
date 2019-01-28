@@ -1,4 +1,4 @@
-![fibaro_icon.png]
+![fibaro_icon](fibaro_icon.png)
 
 Description 
 ===
