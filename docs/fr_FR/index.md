@@ -1,3 +1,5 @@
+![fibaro_icon.png]
+
 Description 
 ===
 
