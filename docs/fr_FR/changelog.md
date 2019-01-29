@@ -1,5 +1,5 @@
 **29/01/2019** - version 1.0.1
-* resolution de bug d'enregistrement de template
+* résolution de bug d'enregistrement de template
 * ajout de gestion de dimmers
 
 
