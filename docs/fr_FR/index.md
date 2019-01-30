@@ -10,6 +10,7 @@ Modules compatible:
 - Capteurs de températures (état)
 - Volet roulant  (état / Open / close / stop / slider)
 - Variateurs / dimmers (état / On / Off / slider)
+- Détecteurs d'ouvertures (état ouverture  / état armement)
 
 Configuration
 ===
@@ -41,6 +42,7 @@ Pour Rafraîchir des modules et leurs passer l'information de changement d'état
     665 value
     246 value
     705 value
+    705 armed ---- Pour détecteur ouverture ou mouvement seulement !!!
     %% events
     %% globals
     --]]
