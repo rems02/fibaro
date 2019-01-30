@@ -1,6 +1,11 @@
+**30/01/2019** - version 1.0.2
+* Integration des détecteurs d'ouvertures
+* Correction de bug mineurs
+
+
 **29/01/2019** - version 1.0.1
-* résolution de bug d'enregistrement de template
-* ajout de la gestion des dimmers / variateurs
+* Correction du bug "enregistrement de templates"
+* Integration des dimmers / variateurs
 
 
 **28/01/2019** - version 1.0
