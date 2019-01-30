@@ -48,11 +48,13 @@ Pour Rafraîchir des modules et leurs passer l'information de changement d'état
     --]]
 
     local deviceID = {2004,2005,2062,2058,2094,2114}; -- ID de la commande Rafraichir de chaque module Jeedom
-    apiKeyJeedom = fibaro:getGlobal("ApiJeedom"); -- API de votre Jeedom enregistré dans une variable globale
+    local apiKeyJeedom = "gr5GfLIHd25f0325dsdeGFTRfFf5s58empsPjHyGfGFFSGF"; -- API de votre Jeedom
+    local IP_Jeedom = "192.168.X.X"; -- IP de votre Jeedom
+    
     for i=1, #deviceID do
 
     local http = net.HTTPClient()
-    local url = "http://IP_Jeedom/core/api/jeeApi.php?apikey=" ..apiKeyJeedom .."&type=cmd&id=" ..deviceID[i]  
+    local url = "http://" ..IP_Jeedom.. "/core/api/jeeApi.php?apikey=" ..apiKeyJeedom .."&type=cmd&id=" ..deviceID[i]  
     http:request(url, {
 	    success = function(response)
 		    if response.status == 200 then
