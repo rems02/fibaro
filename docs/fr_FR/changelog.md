@@ -1,3 +1,8 @@
+**31/01/2019** - version 1.0.3
+--
+* Correction de bug "Prise en compte des caractères spéciaux dans Login/Password)"
+
+
 **30/01/2019** - version 1.0.2
 --
 * Integration des détecteurs d'ouvertures
