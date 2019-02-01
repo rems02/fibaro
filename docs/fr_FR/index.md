@@ -119,4 +119,4 @@ a partir d'ici vous pouvez répéter la procédure tant de fois que vous avez de
 
 Changelog
 ===
-[Le Changelog se trouve ici](https://github.com/rems02/fibaro/blob/master/docs/fr_FR/changelog.md)
+[Le Changelog se trouve ici](https://rems02.github.io/fibaro/fr_FR/changelog)
