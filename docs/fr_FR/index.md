@@ -1,6 +1,4 @@
-<p style="text-align:center";>
 ![fibaro_icon](https://github.com/rems02/fibaro/raw/master/docs/fr_FR/fibaro_icon.png)
-</p>
 
 Description 
 ===
