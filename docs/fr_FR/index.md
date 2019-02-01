@@ -17,15 +17,15 @@ Configuration
 
 Renseignez l'IP / login et mot de passe de votre box (HC2 ou HCL)
 
-![ip_login_password](ip_login_password.PNG)
+![ip_login_password](https://github.com/rems02/fibaro/raw/master/docs/fr_FR/ip_login_password.PNG)
 
 Cliquez sur bouton **Ajouter**
 
-![add_devices](add_devices.PNG)
+![add_devices](https://github.com/rems02/fibaro/raw/master/docs/fr_FR/add_devices.PNG)
 
 Renseignez bien **ID** de votre module que vous souhaitez d'ajouter
 
-![ID_Device](ID_Device.PNG)
+![ID_Device](https://github.com/rems02/fibaro/raw/master/docs/fr_FR/ID_Device.PNG)
 
 Retour d'information Fibaro->Jeedom
 ===
