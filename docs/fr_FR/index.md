@@ -6,9 +6,15 @@
 Description 
 ===
 
-Plugin Fibaro récupère et interagie avec les modules de vos box HC2 ou HCL. 
-Le type de module est détecté automatiquement puis inséré dans Jeedom.
-Modules compatible:
+Ce plugin très puissant et très complet vous permettra de gérer 
+et interagir avec les modules de vos boxes Fibaro HC2 ou HCL.
+Le type de modules est détecté automatiquement puis inséré dans Jeedom.
+Les deux boxes communiques facilement et le changement d'étét est presue instantané
+grace au script LUA pour la HC2 ou un scenario pour la HCL.
+L'ajout de modules est regulié, leurs intégration peut être ajoutée sur une simple demande.
+
+
+_Modules compatible:_
 - interrupteur On/Off (état / on / off)
 - Wall Plug Fibaro (état / on / off)
 - Wall Plug NodOn (état / on / off)
@@ -21,7 +27,7 @@ Modules compatible:
 Configuration
 ===
 
-Renseignez l'IP / login et mot de passe de votre box (HC2 ou HCL)
+Dans la partie _Configuration_ Renseignez l'IP, login et mot de passe de votre box (HC2 ou HCL)
 
 ![ip_login_password](https://github.com/rems02/fibaro/raw/master/docs/fr_FR/ip_login_password.PNG)
 
@@ -35,6 +41,9 @@ Renseignez bien **ID** de votre module que vous souhaitez d'ajouter
 
 Retour d'information Fibaro->Jeedom
 ===
+
+HC2
+---
 
 Pour Rafraîchir des modules et leurs passer l'information de changement d'état il faut creer une scene dans votre HC2
 
@@ -78,3 +87,33 @@ Pour Rafraîchir des modules et leurs passer l'information de changement d'état
     })  
     i=i+1;
     end
+
+
+HCL
+---
+Voilà la procédure de création d'un scénario dans votre Jeedom
+
+Dans Outil scénario:.
+
+![Ajouter](https://github.com/rems02/fibaro/raw/master/docs/fr_FR/1.PNG)
+
+![Nom](https://github.com/rems02/fibaro/raw/master/docs/fr_FR/2.PNG)
+
+Sélectionner **Programmé** puis **+** puis ajouter * * * * **
+
+![déclencheur](https://github.com/rems02/fibaro/raw/master/docs/fr_FR/3.PNG)
+
+![scenario](https://github.com/rems02/fibaro/raw/master/docs/fr_FR/4.PNG)
+
+![ajouter bloc](https://github.com/rems02/fibaro/raw/master/docs/fr_FR/5.PNG)
+
+![action](https://github.com/rems02/fibaro/raw/master/docs/fr_FR/6.PNG)
+
+![ajouter](https://github.com/rems02/fibaro/raw/master/docs/fr_FR/7.PNG)
+
+a partir d'ici vous pouvez répéter la procédure tant de fois que vous avez de modules a importer
+
+![action](https://github.com/rems02/fibaro/raw/master/docs/fr_FR/8.PNG)
+
+![valider](https://github.com/rems02/fibaro/raw/master/docs/fr_FR/9.PNG)
+
