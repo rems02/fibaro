@@ -1,4 +1,5 @@
 **01/02/2019** - version 1.2
+--
 * Integration des détecteurs de mouvments
 * Integration des Wall Plug Fibaro et NodOn
 
