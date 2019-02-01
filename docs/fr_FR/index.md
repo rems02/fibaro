@@ -117,3 +117,6 @@ a partir d'ici vous pouvez répéter la procédure tant de fois que vous avez de
 
 ![valider](https://github.com/rems02/fibaro/raw/master/docs/fr_FR/9.PNG)
 
+Changelog
+===
+[Le Changelog se trouve ici](https://github.com/rems02/fibaro/blob/master/docs/fr_FR/changelog.md)
