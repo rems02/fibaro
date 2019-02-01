@@ -1,3 +1,8 @@
+**01/02/2019** - version 1.2
+* Integration des détecteurs de mouvments
+* Integration des Wall Plug Fibaro et NodOn
+
+
 **31/01/2019** - version 1.0.3
 --
 * Correction de bug "Prise en compte des caractères spéciaux dans Login/Password)"
