@@ -1,3 +1,9 @@
+**04/02/2019** - version 1.2.2
+--
+* Integration des détecteurs de mouvments SATEL
+* Correction de bug mineurs
+
+
 **01/02/2019** - version 1.2
 --
 * Integration des détecteurs de mouvments
