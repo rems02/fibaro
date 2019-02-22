@@ -9,9 +9,9 @@ Description
 Ce plugin très puissant et très complet vous permettra de gérer 
 et interagir avec les modules de vos boxes Fibaro HC2 ou HCL.
 Le type de modules est détecté automatiquement puis inséré dans Jeedom.
-Les deux boxes communiques facilement et le changement d'étét est presue instantané
+Les deux boxes communiques facilement et le changement d'état est presque instantané
 grace au script LUA pour la HC2 ou un scenario pour la HCL.
-L'ajout de modules est regulié, leurs intégration peut être ajoutée sur une simple demande.
+L'ajout de modules est régulier, leurs intégration peut être ajoutée sur une simple demande.
 
 
 _Modules compatible:_
