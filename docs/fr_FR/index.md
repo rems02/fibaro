@@ -23,6 +23,9 @@ _Modules compatible:_
 - Variateurs / dimmers (état / On / Off / slider)
 - Détecteurs d'ouvertures (état ouverture  / état armement)
 - Détecteurs de mouvements (état mouvement  / état armement)
+- Détecteurs de mouvements l'œil de Sauron v2 (état mouvement / état armement)
+- Détecteurs d'humidité (état)
+- Luxmètres (état)
 
 Configuration
 ===
