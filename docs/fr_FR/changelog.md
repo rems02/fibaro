@@ -1,3 +1,10 @@
+**07/03/2019** - version 1.4
+--
+* Integration des détecteurs de de mouvements l'œil de Sauron v2
+* Integration des détecteurs d'humidité
+* Integration des Luxmètres
+
+
 **04/02/2019** - version 1.2.2
 --
 * Integration des détecteurs de mouvments SATEL
