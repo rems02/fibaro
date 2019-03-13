@@ -1,3 +1,8 @@
+**13/03/2019** - version 1.4.2
+--
+* Modification de la scène HC2 pour éviter le refresh multiples
+
+
 **07/03/2019** - version 1.4
 --
 * Integration des détecteurs de de mouvements l'œil de Sauron v2
