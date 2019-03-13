@@ -54,43 +54,63 @@ Pour Rafraîchir des modules et leurs passer l'information de changement d'état
 **_Code LUA_**
 
     --[[
-    %% properties
-    221 value ---- Id des modules Fibaro
-    197 value ---- --//--
-    218 value
-    665 value
-    246 value
-    705 value
-    705 armed ---- Pour détecteur ouverture ou mouvement seulement !!!
-    %% events
-    %% globals
-    --]]
+%% properties
+221 value
+197 value
+665 value
+382 value
+382 armed
+22 value
+22 armed
+--]]
 
-    local deviceID = {2004,2005,2062,2058,2094,2114}; -- ID de la commande Rafraichir de chaque module Jeedom
-    local apiKeyJeedom = "gr5GfLIHd25f0325dsdeGFTRfFf5s58empsPjHyGfGFFSGF"; -- API de votre Jeedom
-    local IP_Jeedom = "192.168.X.X"; -- IP de votre Jeedom
-    
-    for i=1, #deviceID do
+---- Paramètrage utilisateur ----
 
-    local http = net.HTTPClient()
-    local url = "http://" ..IP_Jeedom.. "/core/api/jeeApi.php?apikey=" ..apiKeyJeedom .."&type=cmd&id=" ..deviceID[i]  
-    http:request(url, {
-	    success = function(response)
-		    if response.status == 200 then
-			    fibaro:debug('OK, réponse : '.. response.data)
-		    else
-			    fibaro:debug("Erreur : status=" .. tostring(response.status))
-		    end
-	    end,
-	    error = function(err)
-		    fibaro:debug("Erreur : " .. err)
-	    end,
-	    options = {
-		    method = 'GET'
-	    }
-    })  
-    i=i+1;
-    end
+-- Associations [ID Fibaro] = ID Jeedom
+local HC2Jeedom = {
+--ID_HC2 = ID_Jeedom, 
+  [197]=2004, --Lumière Cuisine 
+  [221]=2005, --Lumière Salon
+  [665]=2062, --Température Porte Cuisine
+  [382]=2128, --Mouvement Mezzanine /!\ ajouter 382 value et 382 armed  ds properties
+  [22] =2122  --Overture Salon /!\ ajouter 22 value et 22 armed  ds properties  
+}
+
+IP_Jeedom = "192.168.1.101" -- IP Jeedom
+apiKeyJeedom = "45Gfgggf254ds;jfklsdf24646s4dfg" -- API key Jeedom
+---- Fin de paramètrage utilisateur ----
+
+--- /!\ Ne rien modifier a partir d'ici /!\ ---
+local trigger = fibaro:getSourceTrigger();
+
+--Construction de URL
+local http = net.HTTPClient()
+local url = "http://" ..IP_Jeedom .."/core/api/jeeApi.php?apikey=" ..apiKeyJeedom .."&type=cmd&id=" ..HC2Jeedom[trigger['deviceID']]
+
+
+
+if (trigger['type'] == 'property') then
+  --fibaro:debug('Fibaro ID = ' .. trigger['deviceID']);
+  --fibaro:debug('Jeedom ID = ' .. HC2Jeedom[trigger['deviceID']]);
+  --fibaro:debug(url)
+  
+  http:request(url, {
+	success = function(response)
+		if response.status == 200 then
+			fibaro:debug('OK, réponse : '.. response.data)
+		else
+			fibaro:debug("Erreur : status=" .. tostring(response.status))
+		end
+	end,
+	error = function(err)
+		fibaro:debug("Erreur : " .. err)
+	end,
+	options = {
+		method = 'GET'
+	}
+}) 
+
+end
 
 
 HCL
