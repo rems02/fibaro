@@ -1,6 +1,6 @@
 **18/03/2020** - version 1.4.4
 --
-* Modification pour la comptabilité avec PHP 7.3 sous Buster
+* Modification pour la compatibilité avec PHP <7.3 sous Buster (Rpi)
 
 
 **13/03/2019** - version 1.4.2
