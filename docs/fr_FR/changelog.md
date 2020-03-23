@@ -1,3 +1,9 @@
+**23/03/2020** - version 1.4.6
+--
+* Modification / ajout des icones des équipements importés
+* Correction de bug mineurs
+
+
 **18/03/2020** - version 1.4.4
 --
 * Modification pour la compatibilité avec PHP <7.3 sous Buster (Rpi)
