@@ -39,7 +39,7 @@ if (!isConnect()) {
         <div class="form-group">
             <label class="col-lg-4 control-label">{{Mot de Passe}}</label>
             <div class="col-lg-2">
-                <input class="configKey form-control" data-l1key="fibaroMDP" value="80" />
+                <input class="configKey form-control" type="password" data-l1key="fibaroMDP" value="80" />
             </div>
         </div>
   </fieldset>
