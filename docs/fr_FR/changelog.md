@@ -1,3 +1,8 @@
+**30/04/2020** - version 1.4.8
+--
+* Ajout de Roller shuter 3 (FGR223)
+* Remplacement de type pour champ "password" dans la configuration
+
 **23/03/2020** - version 1.4.6
 --
 * Modification / ajout des icones des équipements importés
