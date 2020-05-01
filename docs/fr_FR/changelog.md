@@ -1,4 +1,4 @@
-**02/05/2020** - version 1.4.8
+**02/05/2020** - version 1.5
 --
 * Ajout de Détecteur de Fumé (FGSS001)
 * Ajout de Détecteur d'inodations (FGFS101)
