@@ -152,6 +152,7 @@ class fibaro extends eqLogic {
           break;
           //---
           case "com.fibaro.FGRM222": //volets
+          case "com.fibaro.FGR223";
           $icone='store.png';
           break;
           //---
@@ -457,6 +458,7 @@ class fibaro extends eqLogic {
           break;     
             
          case "com.fibaro.FGRM222": //volets
+         case "com.fibaro.FGR223";
             
             //refreshVol
             $cmdVol = $this->getCmd(null, 'refresh');
