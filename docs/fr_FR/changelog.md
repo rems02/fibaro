@@ -1,3 +1,8 @@
+**02/05/2020** - version 1.4.8
+--
+* Ajout de Détecteur de Fumé (FGSS001)
+* Ajout de Détecteur d'inodations (FGFS101)
+
 **30/04/2020** - version 1.4.8
 --
 * Ajout de Roller shuter 3 (FGR223)

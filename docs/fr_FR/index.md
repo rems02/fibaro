@@ -27,6 +27,8 @@ _Modules compatible:_
 - Détecteurs de mouvements l'œil de Sauron v2 (état mouvement / état armement)
 - Détecteurs d'humidité (état)
 - Luxmètres (état)
+- Détecteur de Fumé (FGSS001)
+- Détecteur d'inodations (FGFS101)
 
 Configuration
 ===
