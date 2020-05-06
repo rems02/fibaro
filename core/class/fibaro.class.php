@@ -732,6 +732,55 @@ class fibaro extends eqLogic {
               $cmdArm->save();
             
          break;
+                
+                
+         case "com.fibaro.FGSS001": // Ajout de Détecteur de Fumé (FGSS001)
+         case "om.fibaro.FGFS101": // Ajout de Détecteur d'inodations (FGFS101)
+                
+
+                       
+            //Refresh
+            $getDataCmd = $this->getCmd(null, 'refresh');
+        if (!is_object($getDataCmd))
+        {
+            // Création de la commande Rafraichir
+            $cmd = new fibaroCmd();
+            // Nom affiché
+            $cmd->setName('RafraichirOuverture');
+            // Identifiant de la commande
+            $cmd->setLogicalId('refresh');
+            // Identifiant de l'équipement
+            $cmd->setEqLogic_id($this->getId());
+            // Type de la commande
+            $cmd->setType('action');
+            // Sous-type de la commande
+            $cmd->setSubType('other');
+            // Visibilité de la commande
+            $cmd->setIsVisible(1);
+            // Sauvegarde de la commande
+            $cmd->save();
+        }
+            
+            //Capteur ouverture
+           	$cmdOuv = $this->getCmd(null, 'ouverture');
+
+            if (!is_object($cmdOuv)) {
+              $cmdOuv = new fibaroCmd();
+			  $cmdOuv->setName(__('Alarme', __FILE__));
+              //$cmdOuv->setTemplate('dashboard','door' );
+              //$cmdOuv->setTemplate('mobile', 'door');
+            }
+			  $cmdOuv->setLogicalId('ouverture');
+              $cmdOuv->setEqLogic_id($this->getId());
+              $cmdOuv->setOrder(0);
+              $cmdOuv->setIsVisible(1);
+              $cmdOuv->setValue('ouverture');
+              $cmdOuv->setType('info');
+			  $cmdOuv->setSubType('binary');            
+              $cmdOuv->save();
+                
+        break;
+                
             
          //case "com.fibaro.multilevelSwitch": //dimmer
            
