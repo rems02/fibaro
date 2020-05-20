@@ -1,3 +1,7 @@
+**20/05/2020** - version 1.6
+--
+* Ajout de Wallplug 2 de Fibaro (FGWP102)
+
 **02/05/2020** - version 1.5
 --
 * Ajout de Détecteur de Fumé (FGSS001)
