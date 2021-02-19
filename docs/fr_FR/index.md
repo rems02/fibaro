@@ -56,7 +56,7 @@ Pour Rafraîchir des modules et leurs passer l'information de changement d'état
 
 **_Code LUA - DECLARATIONS_**
 
-{
+`{
     operator = "any",
     conditions = {
         {
@@ -76,12 +76,12 @@ Pour Rafraîchir des modules et leurs passer l'information de changement d'état
             isTrigger = true
         }
     }
-}
+}`
 
 
-**_Code LUA - ACTION**
+**_Code LUA - ACTION_**
 
----- Paramètrage utilisateur ----
+`---- Paramètrage utilisateur ----
 
 -- Associations [ID Fibaro] = ID Jeedom
 local HC2Jeedom = {
@@ -125,7 +125,7 @@ options = {
 }
 }) 
 
-end
+end`
 
 
 HC2
