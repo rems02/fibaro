@@ -58,25 +58,25 @@ Pour Rafraîchir des modules et leurs passer l'information de changement d'état
 
 `
 {
-    operator = "any",
-    conditions = {
-        {
-            type = "device",
-            id = 48,
-            property = "value",
-            operator = "anyValue",
-            value = true,
-            isTrigger = true
-        },
-        {
-            type = "device",
-            id = 52,
-            property = "value",
-            operator = "anyValue",
-            value = true,
-            isTrigger = true
-        }
-    }
+	operator = "any",
+	conditions = {
+		{
+			type = "device",
+			id = 48,
+			property = "value",
+			operator = "anyValue",
+			value = true,
+			isTrigger = true
+		},
+		{
+			type = "device",
+			id = 52,
+			property = "value",
+			operator = "anyValue",
+			value = true,
+			isTrigger = true
+		}
+	}
 }
 `
 
