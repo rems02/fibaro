@@ -56,7 +56,8 @@ Pour Rafraîchir des modules et leurs passer l'information de changement d'état
 
 **_Code LUA - DECLARATIONS_**
 
-`{
+`
+{
     operator = "any",
     conditions = {
         {
@@ -76,8 +77,8 @@ Pour Rafraîchir des modules et leurs passer l'information de changement d'état
             isTrigger = true
         }
     }
-}`
-
+}
+`
 
 **_Code LUA - ACTION_**
 
@@ -93,22 +94,12 @@ local HC2Jeedom = {
 IP_Jeedom = "192.168.1.1" -- IP Jeedom
 apiKeyJeedom = "45Gfgggf254ds;jfklsdf24646s4dfg" -- API key Jeedom
 ---- Fin de paramètrage utilisateur ----
-
-
 --- /!\ Ne rien modifier a partir d'ici /!\ ---
 local trigger = sourceTrigger
-
 --Construction de URL
 local http = net.HTTPClient()
 local url = "http://" ..IP_Jeedom .."/core/api/jeeApi.php?apikey=" ..apiKeyJeedom .."&type=cmd&id=" .. HC2Jeedom[trigger.id]
-
-
-
 if (tri?gger.property == 'property') then
-  --fibaro:debug('Fibaro ID = ' .. trigger.id)
-  --fibaro:debug('Jeedom ID = ' .. HC2Jeedom[trigger.id])
-  --fibaro:debug(url)
-
   http:request(url, {
     success = function(response)
     if response.status == 200 then
@@ -124,8 +115,8 @@ options = {
     method = 'GET'
 }
 }) 
-
-end`
+end
+`
 
 
 HC2
