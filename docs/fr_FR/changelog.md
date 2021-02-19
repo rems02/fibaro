@@ -1,3 +1,7 @@
+**19/02/2021** - version 1.6.1
+--
+* Mise à jour de la scène pour HC3
+
 **20/05/2020** - version 1.6
 --
 * Ajout de Wallplug 2 de Fibaro (FGWP102)
