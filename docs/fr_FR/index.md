@@ -29,6 +29,7 @@ _Modules compatible:_
 - Luxmètres (état)
 - Détecteur de Fumé (FGSS001)
 - Détecteur d'inodations (FGFS101)
+- Détecteur de CO2 (FGCD001)
 
 Configuration
 ===

@@ -1,3 +1,8 @@
+**04/11/2021** - version 1.6.5
+--
+* Integration des détecteurs de CO2
+* Correction de bug mineurs
+
 **19/02/2021** - version 1.6.1
 --
 * Mise à jour de la scène pour HC3
