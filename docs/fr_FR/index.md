@@ -7,10 +7,10 @@ Description
 ===
 
 Ce plugin très puissant et très complet vous permettra de gérer 
-et interagir avec les modules de vos boxes Fibaro HC2 ou HCL.
+et interagir avec les modules de vos boxes Fibaro HC2 / HC3 ou HCL.
 Le type de modules est détecté automatiquement puis inséré dans Jeedom.
 Les deux boxes communiques facilement et le changement d'état est presque instantané
-grace au script LUA pour la HC2 ou un scenario pour la HCL.
+grace au script LUA pour la HC2 et HC3 ou un scenario pour la HCL.
 L'ajout de modules est régulier, leurs intégration peut être ajoutée sur une simple demande.
 
 
@@ -29,6 +29,7 @@ _Modules compatible:_
 - Luxmètres (état)
 - Détecteur de Fumé (FGSS001)
 - Détecteur d'inodations (FGFS101)
+- Détecteur de CO2 (FGCD001)
 
 Configuration
 ===
@@ -47,6 +48,90 @@ Renseignez bien **ID** de votre module que vous souhaitez d'ajouter
 
 Retour d'information Fibaro->Jeedom
 ===
+
+
+HC3
+---
+
+Pour Rafraîchir des modules et leurs passer l'information de changement d'état il faut creer une scene dans votre HC3
+
+**_Code LUA - DECLARATIONS_**
+
+```
+{
+	operator = "any",
+	conditions = {
+		{
+			type = "device",
+			id = 48,
+			property = "value",
+			operator = "anyValue",
+			value = true,
+			isTrigger = true
+		},
+		{
+			type = "device",
+			id = 52,
+			property = "value",
+			operator = "anyValue",
+			value = true,
+			isTrigger = true
+		}
+	}
+}
+```
+
+
+**_Code LUA - ACTION_**
+
+```
+---- Paramètrage utilisateur ----
+
+-- Associations [ID Fibaro] = ID Jeedom
+local HC2Jeedom = {
+--ID_HC2 = ID_Jeedom, 
+  [48]=2004, --Lumière Cuisine 
+  [52] =2122  --Overture Salon  
+}
+
+IP_Jeedom = "192.168.1.1" -- IP Jeedom
+apiKeyJeedom = "45Gfgggf254ds;jfklsdf24646s4dfg" -- API key Jeedom
+---- Fin de paramètrage utilisateur ----
+
+
+--- /!\ Ne rien modifier a partir d'ici /!\ ---
+local trigger = sourceTrigger
+
+--Construction de URL
+local http = net.HTTPClient()
+local url = "http://" ..IP_Jeedom .."/core/api/jeeApi.php?apikey=" ..apiKeyJeedom .."&type=cmd&id=" .. HC2Jeedom[trigger.id]
+
+
+
+if (tri?gger.property == 'property') then
+  --fibaro:debug('Fibaro ID = ' .. trigger.id)
+  --fibaro:debug('Jeedom ID = ' .. HC2Jeedom[trigger.id])
+  --fibaro:debug(url)
+
+  http:request(url, {
+    success = function(response)
+    if response.status == 200 then
+        fibaro:debug('OK, réponse : '.. response.data)
+    else
+        fibaro:debug("Erreur : status=" .. tostring(response.status))
+    end
+end,
+error = function(err)
+    fibaro:debug("Erreur : " .. err)
+end,
+options = {
+    method = 'GET'
+}
+}) 
+
+end
+```
+
 
 HC2
 ---

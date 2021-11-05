@@ -176,6 +176,15 @@ class fibaro extends eqLogic {
           case "com.fibaro.satelZone": //detecteur de mouvment capteurs d'alarme Satel
           $icone='motion2.png';
           break;
+          //---
+          case "com.fibaro.FGSS001": //detecteur de fumé 
+          case "com.fibaro.FGCD001": //detecteur de CO2
+          $icone='smoke_sensor0.png';
+          break;
+          //---
+          case "com.fibaro.FGFS101": //detecteur d'innondation
+          $icone='flood_detector0.png';
+          break;
           //--- 
           
           
@@ -737,7 +746,8 @@ class fibaro extends eqLogic {
                 
                 
          case "com.fibaro.FGSS001": // Ajout de Détecteur de Fumé (FGSS001)
-         case "om.fibaro.FGFS101": // Ajout de Détecteur d'inodations (FGFS101)
+         case "com.fibaro.FGFS101": // Ajout de Détecteur d'inodations (FGFS101)
+         case "com.fibaro.FGCD001": // Ajout de Détecteur de CO2 (FGCD001)
                 
 
                        
