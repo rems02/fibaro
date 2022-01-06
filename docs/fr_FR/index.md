@@ -30,6 +30,7 @@ _Modules compatible:_
 - Détecteur de Fumé (FGSS001)
 - Détecteur d'inodations (FGFS101)
 - Détecteur de CO2 (FGCD001)
+- Contrôle de portail NICE
 
 Configuration
 ===

@@ -1,3 +1,7 @@
+**06/01/2022** - version 1.6.6
+--
+* Integration de contrôleur du portail NICE
+
 **04/11/2021** - version 1.6.5
 --
 * Integration des détecteurs de CO2
