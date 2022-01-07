@@ -136,7 +136,7 @@ class fibaro extends eqLogic {
           break;
           //---
           case "com.fibaro.FGWP101": //Wallplug FGWP101
-	  case "com.fibaro.FGWP102": //Wallplug FGWP102	   
+	        case "com.fibaro.FGWP102": //Wallplug FGWP102	   
           $icone='wallplug.png';
           break;
           //---
@@ -153,7 +153,8 @@ class fibaro extends eqLogic {
           break;
           //---
           case "com.fibaro.FGRM222": //volets
-	  case "com.fibaro.FGR223":
+	        case "com.fibaro.FGR223":
+          case "com.fibaro.baseShutter":
           $icone='store.png';
           break;
           //---
@@ -229,7 +230,7 @@ class fibaro extends eqLogic {
           
           case "com.fibaro.binarySwitch": //Interupteur On/Off + Nodon
           case "com.fibaro.FGWP101": //Wallplug
-	  case "com.fibaro.FGWP102": //Wallplug 2
+	        case "com.fibaro.FGWP102": //Wallplug 2
                
             
             //On
@@ -468,8 +469,9 @@ class fibaro extends eqLogic {
             
           break;     
             
-         case "com.fibaro.FGRM222": //volets
-         case "com.fibaro.FGR223";
+         case "com.fibaro.FGRM222": //volets  
+         case "com.fibaro.FGR223":
+         case "com.fibaro.baseShutter":
             
             //refreshVol
             $cmdVol = $this->getCmd(null, 'refresh');
