@@ -230,8 +230,8 @@ class fibaro extends eqLogic {
           
           case "com.fibaro.binarySwitch": //Interupteur On/Off + Nodon
           case "com.fibaro.FGWP101": //Wallplug
-	        case "com.fibaro.FGWP102": //Wallplug 2
-               
+	        case "com.fibaro.FGWP102": //Wallplug 2  
+          case  "com.fibaro.FGPB101":  // the button FGPB-101
             
             //On
             $cmdOn = $this->getCmd(null, 'on');
