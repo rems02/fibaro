@@ -154,6 +154,7 @@ class fibaro extends eqLogic {
           //---
           case "com.fibaro.FGRM222": //volets
 	        case "com.fibaro.FGR223":
+          case "com.fibaro.FGR221":
           case "com.fibaro.baseShutter":
           $icone='store.png';
           break;
@@ -471,6 +472,7 @@ class fibaro extends eqLogic {
             
          case "com.fibaro.FGRM222": //volets  
          case "com.fibaro.FGR223":
+         case "com.fibaro.FGR221":
          case "com.fibaro.baseShutter":
             
             //refreshVol

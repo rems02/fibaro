@@ -1,3 +1,7 @@
+**12/09/2022** - version 1.6.7
+--
+* Ajout de Roller shuter FGR221
+
 **06/01/2022** - version 1.6.6
 --
 * Integration de contrôleur du portail NICE
